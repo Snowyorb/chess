@@ -13,11 +13,12 @@ body {
 }
 
 h1 {
-	text-transform: lowercase;
+	/* text-transform: lowercase; */
 	text-shadow: 0 1px 0 white;
 	letter-spacing: 0.5ex;
 	font-weight: bold;
-	font-size: 100%;
+	font-size: 130%;
+	text-align: center;
 
 	background: white;
 	text-shadow: 0 0 5px black;
@@ -175,10 +176,12 @@ h1 {
 
 #chessboard table tr td.white {
 	color: white;
+	text-shadow: 0 0 10px #9D00B3;
 }
 
 #chessboard table tr td.black {
 	color: black;
+	text-shadow: 0 0 10px #7fff00;
 }
 
 #chessboard table tr td.from {
