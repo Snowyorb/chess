@@ -161,7 +161,7 @@ Chess.UI.prototype.updateMoves = function() {
 			 * @return {string}
 			 */
 			function(move, index) {
-				return '<a href="#" id="' + index + '">' + move.getString() + "</a><br/>";
+				return '<a href="#" class="tag" id="' + index + '">' + move.getString() + "</a><br/>";
 			}).join(""));
 
 	$(Chess.UI.CHESSBOARD_PIECES_AND_SQUARES).removeClass("can-move");

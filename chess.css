@@ -13,12 +13,11 @@ body {
 }
 
 h1 {
-	/* text-transform: lowercase; */
+	text-transform: lowercase;
 	text-shadow: 0 1px 0 white;
 	letter-spacing: 0.5ex;
 	font-weight: bold;
-	font-size: 130%;
-	text-align: center;
+	font-size: 100%;
 
 	background: white;
 	text-shadow: 0 0 5px black;
@@ -58,19 +57,27 @@ h1 {
 }
 
 #moves {
-	border: 1px solid silver;
-	border-radius: 14px;
-	width: 138px;
-	/* max-width: 168px; */
-	padding: 5px;
-	padding-left: 15px;
-	float: right;
-	overflow: auto;
-	height: 688px;
+    border: 3px double black;
+    align-content: center;
+    border-radius: 14px;
+    text-align: center;
+    width: 138px;
+    padding: 5px;
+    padding-left: 15px;
+    float: right;
+    overflow: auto;
+    height: 688px;
 }
 
 #moves button {
 	width: 100%;
+}
+
+.tag{
+	font-size: 23;
+	color: black;
+	border: 3px solid #000000; 
+
 }
 
 #clear {
@@ -175,12 +182,10 @@ h1 {
 
 #chessboard table tr td.white {
 	color: white;
-	text-shadow: 0 0 10px #9D00B3;
 }
 
 #chessboard table tr td.black {
 	color: black;
-	text-shadow: 0 0 10px #7fff00;
 }
 
 #chessboard table tr td.from {
@@ -227,7 +232,7 @@ h1 {
 	box-shadow: inset 0 0 10px 1px yellow;
 }
 
-#moves a {
+/* #moves a {
 	color: gray;
 	font-size: 8pt;
 	text-decoration: none;
@@ -237,4 +242,4 @@ h1 {
 	color: silver;
 	pointer-events: none;
 	cursor: default;
-}
+} */
