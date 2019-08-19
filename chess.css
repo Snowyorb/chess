@@ -13,7 +13,7 @@ body {
 }
 
 h1 {
-	text-transform: lowercase;
+	/* text-transform: lowercase; */
 	text-shadow: 0 1px 0 white;
 	letter-spacing: 0.5ex;
 	font-weight: bold;
