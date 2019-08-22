@@ -34,7 +34,10 @@ h1 {
 
 #help {
 	cursor: help;
+	font-size: 12px;
+	margin-top: -30px;
 }
+
 
 #dim {
 	position: fixed;
