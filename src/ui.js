@@ -152,8 +152,9 @@ Chess.UI.prototype.updateMoves = function() {
 	var moves = this.chessPosition.getMoves();
 
 	$("#moves").html(
-		'<a href="#" id="undo" class="' + (this.chessPosition.canUndo() ? "can" : "cannot") + '">undo</a><br/>' +
-		'<a href="#" id="auto" class="' + ((moves.length > 0) ? "can" : "cannot") + '">auto</a><br/>' +
+		'<div class="undoHolder"><a href="#" id="undo" class="' + (this.chessPosition.canUndo() ? "can" : "cannot") + '">undo</a></div><br/>' +
+		'<div class="autoHolder"><a href="#" id="auto" class="' + ((moves.length > 0) ? "can" : "cannot") + '">auto</a></div><br/>' +
+		'<h5>Possible Moves</h5>'+
 		moves.map(
 			/**
 			 * @param {!Chess.Move} move
@@ -161,7 +162,7 @@ Chess.UI.prototype.updateMoves = function() {
 			 * @return {string}
 			 */
 			function(move, index) {
-				return '<a href="#" class="tag" id="' + index + '">' + move.getString() + "</a><br/>";
+				return '<div class="aHolder"><a href="#" class="tag" id="' + index + '">' + move.getString() + "</a></div><br/>";
 			}).join(""));
 
 	$(Chess.UI.CHESSBOARD_PIECES_AND_SQUARES).removeClass("can-move");
